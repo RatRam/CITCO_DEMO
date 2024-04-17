@@ -1,4 +1,4 @@
-﻿<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1234,2122" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1234,1794" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -105,7 +105,7 @@
       <AssemblyReference>UiPath.Platform</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="664,2057" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="664,1729" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_Process1_DataTable" />
     </Sequence.Variables>
@@ -146,22 +146,6 @@
     </ueab:SequenceX>
     <ui:LogMessage DisplayName="Log Message - Status" sap:VirtualizedContainerService.HintSize="602,141" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Total Number of Records Uploaded &quot; + dt_Process1_DataTable.RowCount.ToString]" />
     <ui:LogMessage DisplayName="Log Message - Status - 3" sap:VirtualizedContainerService.HintSize="602,141" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Total Number of Records Uploaded &quot; + dt_Process1_DataTable.RowCount.ToString]" />
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="602,288" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-      <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,209" sap2010:WorkflowViewState.IdRef="Sequence_3">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <isactr:ConnectorActivity ConnectionId="{x:Null}" Configuration="H4sIAAAAAAAACn2PT0vDQBDF74LfIezZlgqevNmAGqy2oPQiHiabR7M22Q27s9ZQ+t2dVfsnIB7n/d7MvLc9P8sydWvQVCF3lslYeHWdbZMu5BnkdU1lgx+PoNe3i19Y2C7yH/o88hAkffdNZScwWY0FeWrB8OHk21JG46wo6nI8GU/U/qJEs9Ds/AP6RKPpiOuRNkG70QYlPhnUhoP/RrP5MNy/9B2SP4+eGNWBz8t3OfckCRJtEQKtcFy/Z+4ewbWrEr4DT/uiUictctI1qplz69gtqYmyKy0GcOrdJsAXDMl1hAvSa/k1aHq1b/pvLjUju4oyJwQrcXZfy+8Npb4BAAA=" DisplayName="Get Message" sap:VirtualizedContainerService.HintSize="388,98" sap2010:WorkflowViewState.IdRef="ConnectorActivity_1" UiPathActivityTypeId="9ac2e8c8-746c-3ec2-9624-55e59000d8d6">
-            <isactr:ConnectorActivity.FieldObjects>
-              <sco:Collection x:TypeArguments="isactr:FieldObject" />
-            </isactr:ConnectorActivity.FieldObjects>
-          </isactr:ConnectorActivity>
-        </Sequence>
-      </ui:CommentOut.Body>
-    </ui:CommentOut>
     <ui:LogMessage DisplayName="Log Message - End" sap:VirtualizedContainerService.HintSize="602,141" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Upload Successful &quot;]" />
   </Sequence>
 </Activity>
